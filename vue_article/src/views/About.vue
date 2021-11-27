@@ -1,12 +1,3 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="about"></div>
 </template>
-
-<style lang="scss">
-$color: red;
-h1 {
-  color: $color;
-}
-</style>
