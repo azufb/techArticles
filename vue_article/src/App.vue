@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div class="navBar">
-      <h1>Let's Try Sass!</h1>
+      <h1 class="title">Try Sass</h1>
       <div class="naviMenu">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
@@ -25,10 +25,15 @@ body {
 
 .navBar {
   padding: 15px 30px;
-  background-color: #2c3e50;
+  background-color: #4b7eb1;
   display: flex;
   align-items: center;
   position: relative;
+  height: 10vh;
+}
+
+.title {
+  color: #fff;
 }
 
 .naviMenu {
@@ -36,8 +41,8 @@ body {
   right: 30px;
 }
 
-h1 {
-  color: #fff;
+#nav {
+  height: 100vh;
 }
 
 #nav a {
@@ -46,6 +51,6 @@ h1 {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #2c3e50;
 }
 </style>
