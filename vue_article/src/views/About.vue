@@ -39,7 +39,6 @@ $colors: (
   "important": red,
   "title": #004eff,
 );
-
 .about {
   background-color: map-get($colors, "backgroundColor");
   height: 90vh;
