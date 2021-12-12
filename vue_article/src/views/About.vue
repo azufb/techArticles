@@ -32,6 +32,18 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "About",
+  setup() {
+    console.log(location.pathname);
+    console.log(history);
+    console.log(history.state);
+    console.log(history.state.back);
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 $colors: (
   "mainColor": #4b7eb1,

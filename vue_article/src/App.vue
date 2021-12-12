@@ -4,7 +4,8 @@
       <h1 class="title">Try Sass</h1>
       <div class="naviMenu">
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/about">About</router-link> |
+        <router-link to="/boxSize">BoxSize</router-link>
       </div>
     </div>
     <router-view />
