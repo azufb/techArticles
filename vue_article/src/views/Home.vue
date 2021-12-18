@@ -6,10 +6,6 @@
     <p class="color2">文字色2</p>
     <p class="color3">文字色3</p>
     <hr />
-    <h2>変数便利！</h2>
-    <p class="color1">文字色1</p>
-    <p class="color2">文字色2</p>
-    <p class="color3">文字色3</p>
   </div>
 </template>
 
@@ -20,33 +16,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$colorH1: #0000ff;
-$colorH2: #000;
-$color1: #9999ff;
-$color2: #6666ff;
-$color3: #0000cc;
+$blue1: #0000ff;
+$black: #000;
+$blue2: #9999ff;
+$blue3: #6666ff;
+$blue4: #0000cc;
 
 h1 {
-  color: $colorH1;
+  color: $blue1;
 }
 
 h2 {
-  color: $colorH2;
+  color: $black;
 }
 
 .color1 {
-  color: $color1;
+  color: $blue2;
 }
 
 .color2 {
-  color: $color2;
+  color: $blue3;
 }
 
 .color3 {
-  color: $color3;
+  color: $blue4;
 }
 
 hr {
-  border-color: $colorH1;
+  border-color: $blue1;
 }
 </style>
