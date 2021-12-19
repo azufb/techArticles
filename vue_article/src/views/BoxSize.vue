@@ -12,15 +12,24 @@ import { onMounted, ref } from "vue";
 export default {
   name: "BoxSize",
   setup() {
-    const box = ref(null);
+    const box = ref();
+
+    console.log(box.value);
 
     onMounted(() => {
-      console.log(box.value);
+      console.log(box.value); // <div class="box" data-v-2fce3522>...</div>
+
+      // 要素のサイズ・位置を求める。
       const boxSize = box.value.getBoundingClientRect();
+      console.log(boxSize);
+
+      // 幅
       const boxWidth = boxSize.width;
+      console.log(boxWidth); // 150
+
+      // 高さ
       const boxHeight = boxSize.height;
-      console.log(`Boxの幅：${boxWidth}`);
-      console.log(`Boxの高さ：${boxHeight}`);
+      console.log(boxHeight); // 120
     });
 
     return {
